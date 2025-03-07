@@ -1,11 +1,12 @@
 import {useEffect, useState} from "react";
 import {mockLoginRequest} from "./mockServices/MockLoginRequest";
+import {I_ResponseData} from "./interfaces/Interfaces";
 
 const Login = () => {
     const [submitted, setSubmitted] = useState(false);
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [response, setResponse] = useState(null);
+    const [response, setResponse] = useState<I_ResponseData | null>(null);
 
     useEffect(() => {
         if (submitted) {
@@ -16,7 +17,7 @@ const Login = () => {
         }
     }, [submitted]);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setSubmitted(true);
     }

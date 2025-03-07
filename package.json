@@ -6,9 +6,16 @@
   "scripts": {
     "build": "tsc"
   },
-  "dependencies": {},
   "devDependencies": {
-    "typescript": "^5.5.3"
+    "@types/lodash": "^4.17.16",
+    "@types/node": "^22.13.9",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@types/react-router-dom": "^5.3.3",
+    "typescript": "^5.8.2"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "react-dom": "^19.0.0"
+  }
 }
