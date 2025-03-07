@@ -1,4 +1,6 @@
-export const mockLoginRequest = (email, password) => {
+import {I_ResponseData} from "../interfaces/Interfaces";
+
+export const mockLoginRequest = (email: string, password : string): Promise<I_ResponseData> => {
     return new Promise((resolve) => {
         setTimeout(() => {
             if (email === "abs@hotmail.com" && password === "password123") {
