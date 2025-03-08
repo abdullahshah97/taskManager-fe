@@ -1,7 +1,7 @@
 export interface I_ResponseData {
     success: boolean;
     message?: string;
-    token ?: string;
+    token : string;
 }
 
 export interface I_Task {
@@ -14,4 +14,10 @@ export interface I_Task {
 export interface I_UserAuth {
     userId: string;
     token: string;
+}
+
+export interface AuthContextType {
+    token: string | null;
+    setToken: (token: string | null) => void;
+    logout: () => void;
 }
