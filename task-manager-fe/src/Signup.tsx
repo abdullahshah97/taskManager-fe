@@ -23,7 +23,7 @@ const Signup = () => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if(password !== passwordConfirm) {
-            setResponse({success: false, message:"Passwords don't match"});
+            setResponse({success: false, token:"Passwords don't match"});
         }
         else{
             setSubmitted(true);
