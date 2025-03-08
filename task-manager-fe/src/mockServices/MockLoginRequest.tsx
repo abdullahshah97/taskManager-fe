@@ -6,7 +6,7 @@ export const mockLoginRequest = (email: string, password : string): Promise<I_Re
             if (email === "abs@hotmail.com" && password === "password123") {
                 resolve({ success: true, token: "mock-token-123" });
             } else {
-                resolve({ success: false, message: "Invalid credentials" });
+                resolve({ success: false, token: "" });
             }
         }, 1000);
     });

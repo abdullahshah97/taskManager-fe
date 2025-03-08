@@ -6,7 +6,7 @@ export const mockSignupRequest = (email : string, password : string): Promise<I_
             if (email !== "abs@hotmail.com") {
                 resolve({ success: true, token: "mock-token-123" });
             } else {
-                resolve({ success: false, message: "User Exists!" });
+                resolve({ success: false, token: "" });
             }
         }, 1000);
     });
