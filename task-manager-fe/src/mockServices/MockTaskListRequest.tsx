@@ -6,10 +6,25 @@ export const mockTaskListRequest = (requestDetails : I_UserAuth): Promise<I_Task
         setTimeout(() => {
             if (requestDetails.userId === "abs@hotmail.com" && requestDetails.token === "mock-token-123") {
                 resolve([{
-                    id: 123,
+                    id: 111,
                     name: "Hang Clothes",
                     description: "Sun is out",
                     tags: ["Home", "Self-Care"]
+                },{
+                    id: 222,
+                    name: "Eat Food",
+                    description: "I'm Hungry",
+                    tags: ["Food"]
+                },{
+                    id: 333,
+                    name: "Code Task Manager",
+                    description: "Get to Work",
+                    tags: ["Work", "Career"]
+                },{
+                    id: 444,
+                    name: "Go Sleep",
+                    description: "Recommended 8 hours",
+                    tags: ["Self-Care"]
                 }]);
             } else {
                 resolve([{
